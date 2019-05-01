@@ -1,0 +1,13 @@
+<% include header %>
+<h1>User</h1>
+
+<% createUser.forEach(function(createUser){ %>
+   <div>
+       <h4><%= createUser.name %> <%= createUser.city %> <%= createUser.dob %> <%= createUser.contact %></h4>
+       <a href="edit">Edit</a>
+       <a href="delete">Delete</a>
+   </div>
+   
+ <% }); %>  
+<a class="btn btn-primary" href="newuser">Add new User</a> 
+<% include footer %> 
